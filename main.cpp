@@ -49,6 +49,17 @@ main(int ac, char *av[])
 	} else {
 		md->showMaximized();
 	}
+	if (md->scanSystem()) {
+		assert(CurrentSysInfo);
+		md->updateInfo(CurrentSysInfo);
+	} else {
+		QMessageBox::critical(md, "Could not scan the system",
+			"The utility encountered a problem while scanning "
+			"the system to get information about it. The "
+			"program will now exit.", QMessageBox::Ok);
+		md->done(QDialog::Rejected);
+		return 0;
+	}
 
 	return app.exec();
 }
