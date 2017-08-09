@@ -1,7 +1,7 @@
 #ifndef __LICENSE_H__
 #define __LICENSE_H__
 
-QString genSerialNr();
+QString genSerialNr();;;;
 bool getSerialNr(QString devFile, QString *serialNr);
 bool setSerialNr(QString devFile, const QString &serialNr);
 QString makeLicense(QString UserName, int NrWipes);
