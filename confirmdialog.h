@@ -15,5 +15,6 @@ private slots:
 	void on_yesButt_clicked();
 	void on_noButt_clicked();
 	void on_nrPasses_valueChanged();
+	void on_nrForbidden_valueChanged();
 };
 #endif
