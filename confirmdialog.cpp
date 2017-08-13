@@ -23,6 +23,12 @@ ConfirmDlg::on_noButt_clicked()
 }
 
 void
+ConfirmDlg::on_nrForbidden_value_Changed()
+{
+	reject();
+}	
+
+void
 ConfirmDlg::on_nrPasses_valueChanged()
 {
 	if (nrPasses->value() > 1) {
