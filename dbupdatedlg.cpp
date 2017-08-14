@@ -355,6 +355,7 @@ bool UpdateDiskDb(DiskInfo *disk, SysInfo *sys,
 	insertParams[":nos"] = disk->number_of_sectors;
 	insertParams[":pss"] = disk->physical_sector_size;
 	insertParams[":cachesz"] = disk->cache_size;
+	insertParams[":name"] = disk->name;
 
 	insertParams[":wres"] = QString(wipestate_str(disk->wiped_state));
 	if (disk->wiped_state == DiskInfo::UNWIPED) {
