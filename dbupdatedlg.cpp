@@ -171,6 +171,8 @@ bool doPerformUpsertQuery(
 		}
 		if (nrrows == 1) {
 			doUpdate = true;
+		} else {
+			doUpdate = false;
 		}
 	}
 
