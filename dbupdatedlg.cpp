@@ -197,6 +197,8 @@ bool doPerformUpsertQuery(
 			   qPrintable(qy.lastError().text()),
 			   qy.numRowsAffected());
 		return false;
+	} else {
+		return true;
 	}
 
 	return true;
