@@ -28,6 +28,7 @@ DBUpdateDlg::DBUpdateDlg(QWidget *parent):QDialog(parent)
 				qPrintable(mdlg->db_username),
 				qPrintable(mdlg->db_password),
 				qPrintable(mdlg->db_hostname),
+			     	qPrintable(mdlg->db_hosturl),
 				qPrintable(mdlg->db_portnr),
 				qPrintable(mdlg->db_dbname));
 	remoteBtn->setText(remoteDBName);
